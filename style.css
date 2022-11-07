@@ -32,6 +32,12 @@ button:hover {
     opacity: 1;
 }
 
+#modal.hide, #fade.hide {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
 #fade {
     position: fixed;
     top: 0;
@@ -71,4 +77,9 @@ button:hover {
 
 #modal.hide, #fade.hide {
     opacity: 0;
+    pointer-events: none;
+}
+
+#modal.hide {
+    top: 0;
 }
